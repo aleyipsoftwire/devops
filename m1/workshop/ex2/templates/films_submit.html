@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Submit a film review</title>
+  </head>
+  <body>
+    <form method="post" , action="/films/submit">
+      <div style="display: flex; flex-direction: column; gap: 8px">
+        <label>
+          Film
+          <input type="text" name="film" />
+        </label>
+
+        <label>
+          Stars
+          <input type="number" name="stars" min="1" max="5" />
+        </label>
+
+        <input type="submit" name="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
