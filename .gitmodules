@@ -1,0 +1,3 @@
+[submodule "m1/starter"]
+	path = m1/starter
+	url = git@github.com:aleyipsoftwire/DevOps-Course-Starter.git
