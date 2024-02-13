@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}Mars{% endblock %}
+
+{% block content %}
+  <h1 class="display-4">Photos from Mars:</h1>
+  <div class="row">
+      {% for pic in img_srcs %}
+      <div class="col-4">
+        <img src="{{ pic }}" />
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  
+{% endblock %}

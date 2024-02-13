@@ -1,0 +1,7 @@
+.idea
+.hypothesis
+*.egg-info
+*.pyc
+/pytest.ini
+/.coverage
+.venv
