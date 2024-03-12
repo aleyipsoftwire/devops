@@ -1,0 +1,24 @@
+# Node/Npm
+node_modules
+
+# Python
+.pytest_cache
+.venv
+__pycache__
+
+answer*
+*.png
+
+# artillery
+output.json*
+
+# playwright
+test-results
+
+# lighthouse
+out*.json
+lighthouse/*.html
+.lighthouseci
+
+# vscode
+.vscode

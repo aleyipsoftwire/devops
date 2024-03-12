@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "playwright-testing"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "Readme.md"
+packages = [
+    { include = "tests" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = "^8.0.1"
+pytest-playwright = "^0.4.4"
+playwright = "^1.41.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

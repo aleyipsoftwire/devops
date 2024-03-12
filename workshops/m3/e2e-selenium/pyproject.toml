@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "e2e-selenium"
+version = "0.1.0"
+description = ""
+authors = ["Jack Mead <jack.mead@corndel.com>"]
+readme = "Readme.md"
+packages = [
+    { include = "tests" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+selenium = "^4.16.0"
+pytest = "^7.4.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

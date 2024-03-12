@@ -1,0 +1,13 @@
+{
+  "name": "lighthouse",
+  "version": "1.0.0",
+  "description": "Project for exploring the Lighthouse tool",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@lhci/cli": "^0.13.0",
+    "lighthouse": "^11.6.0"
+  }
+}
