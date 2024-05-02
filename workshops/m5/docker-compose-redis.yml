@@ -1,0 +1,24 @@
+x-env-vars: &env-vars
+  REDIS_PORT: 6379
+  REDIS_HOST: redis-db
+
+services:
+  redis-db:
+    image: redis
+
+  web-app:
+    build:
+      dockerfile: ./Dockerfile.webapp
+    ports:
+      - "8089:80"
+    environment: *env-vars
+    depends_on:
+      - redis-db
+
+  cli-app:
+    build:
+      dockerfile: ./Dockerfile.cliapp
+      target: redis
+    environment: *env-vars
+    depends_on:
+      - redis-db

@@ -1,0 +1,17 @@
+services:
+  web-app:
+    build:
+      dockerfile: ./Dockerfile.webapp
+    ports:
+      - "8089:80"
+    volumes:
+      - chimera-volume-compose:/opt/chimera/data:ro
+  cli-app:
+    build:
+      dockerfile: ./Dockerfile.cliapp
+      target: data-folder
+    volumes:
+      - chimera-volume-compose:/opt/chimera/data
+
+volumes:
+  chimera-volume-compose:
